@@ -23,11 +23,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp ESC       &kp N1        &kp N2    &kp N3  &kp N4  &kp N5                                               &kp N7  &kp N8  &kp N9     &kp N0        &kp DA_PLUS     &kp BSPC
-&kp TAB       &kp Q         &kp W     &kp E   &kp R   &kp T   &kp LPAR                          &kp N6     &kp Y   &kp U   &kp I      &kp O         &kp P           &kp DA_A_RING
-&kp DA_TILDE  &kp A         &kp S     &kp D   &kp F   &kp G   &kp LBKT                          &soft_off  &kp H   &kp J   &kp K      &kp L         &kp DA_AE       &mt DA_SQT DA_O_SLASH
-&kp LSHFT     &kp Z         &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &kp N   &kp M   &kp COMMA  &kp DOT       &kp DA_MINUS    &mt RSHFT RET
-&kp LCTRL     &kp LEFT_GUI  &kp LALT  &mo 3   &mo 3           &kp SPACE  &mo 1        &kp DEL   &kp SPACE          &mo 2   &kp LEFT   &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&kp ESC       &kp N1        &kp N2    &kp N3  &kp N4  &kp N5                                               &kp N7  &kp N8  &kp N9     &kp N0        &mt DA_ACUTE DA_PLUS  &kp BSPC
+&kp TAB       &kp Q         &kp W     &kp E   &kp R   &kp T   &kp LPAR                          &kp N6     &kp Y   &kp U   &kp I      &kp O         &kp P                 &kp DA_A_RING
+&kp DA_TILDE  &kp A         &kp S     &kp D   &kp F   &kp G   &kp LBKT                          &soft_off  &kp H   &kp J   &kp K      &kp L         &kp DA_AE             &kp DA_O_SLASH
+&kp LSHFT     &kp Z         &kp X     &kp C   &kp V   &kp B   &kp PG_UP  &kp PG_DN    &kp HOME  &kp END    &kp N   &kp M   &kp COMMA  &kp DOT       &kp DA_MINUS          &mt RSHFT RET
+&kp LCTRL     &kp LEFT_GUI  &kp LALT  &mo 3   &mo 3           &kp SPACE  &mo 1        &kp DEL   &kp SPACE          &mo 2   &kp LEFT   &kp UP_ARROW  &kp DOWN_ARROW        &kp RIGHT
             >;
         };
 
@@ -40,7 +40,7 @@
             // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
 
             bindings = <
-&sys_reset  &trans              &kp DA_AT     &trans               &kp LC(F4)            &trans                                              &trans  &trans  &kp KP_SLASH     &kp KP_MULTIPLY  &trans           &trans
+&sys_reset  &trans              &kp DA_AT     &kp LA(F4)           &kp LC(F4)            &trans                                              &trans  &trans  &kp KP_SLASH     &kp KP_MULTIPLY  &trans           &trans
 &kp ESC     &kp N1              &kp N2        &kp N3               &kp N4                &kp N5            &trans                    &trans  &trans  &kp N7  &kp N8           &kp N9           &kp KP_SUBTRACT  &kp DEL
 &trans      &kp DA_MINUS        &kp DA_EQUAL  &kp DA_LEFT_BRACKET  &kp DA_RIGHT_BRACKET  &kp DA_BACKSLASH  &trans                    &trans  &trans  &kp N4  &kp N5           &kp N6           &kp KP_PLUS      &kp KP_MINUS
 &trans      &kp LC(LA(DELETE))  &kp LGUI      &kp LG(C)            &kp LG(V)             &kp GRAVE         &trans  &trans    &trans  &trans  &trans  &kp N1  &kp N2           &kp N3           &kp RET          &kp RET
@@ -57,11 +57,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&trans   &trans     &trans    &trans    &trans    &trans                                       &trans     &trans     &trans     &trans    &trans     &sys_reset
-&kp ESC  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT  &trans                    &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp DEL
-&trans   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE   &trans                    &trans  &kp HOME   &kp PG_UP  &kp PSCRN  &kp UP    &kp GRAVE  &kp TILDE
-&trans   &kp ESC    &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE  &trans  &trans    &trans  &trans  &kp END    &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&trans   &trans     &trans    &mo 3     &trans               &mo 3   &trans    &trans  &trans             &trans     &trans     &trans    &trans     &trans
+&trans   &trans             &trans       &trans       &trans             &trans                                          &trans        &trans            &trans        &trans       &trans        &sys_reset
+&kp ESC  &kp EXCL           &kp DA_AT    &kp DA_HASH  &kp DA_POUND_SIGN  &kp DA_EURO   &trans                    &trans  &kp DA_CARET  &kp DA_AMPERSAND  &kp DA_ASTRK  &kp DA_LPAR  &kp DA_RPAR   &kp DEL
+&trans   &kp DA_UNDERSCORE  &kp DA_PLUS  &kp DA_LBRC  &kp DA_RBRC        &kp DA_PIPE   &trans                    &trans  &kp HOME      &kp PG_UP         &kp PSCRN     &kp UP       &kp DA_ACUTE  &kp TILDE
+&trans   &trans             &trans       &kp DA_LPAR  &kp DA_RPAR        &kp DA_TILDE  &trans  &trans    &trans  &trans  &kp END       &kp PG_DN         &kp LEFT      &kp DOWN     &kp RIGHT     &kp RET
+&trans   &trans             &trans       &mo 3        &trans                           &mo 3   &trans    &trans  &trans                &trans            &trans        &trans       &trans        &trans
             >;
         };
 
