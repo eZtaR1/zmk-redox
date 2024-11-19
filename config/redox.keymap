@@ -25,7 +25,7 @@
             bindings = <
 &mt ESC DA_ONE_HALF  &kp DA_N1     &kp DA_N2  &kp N3    &kp N4    &kp N5                                                       &kp N7    &kp N8    &kp N9     &kp N0        &kp DA_PLUS     &kp BSPC
 &kp TAB              &kp DA_Q      &kp DA_W   &kp DA_E  &kp DA_R  &kp DA_T  &trans                               &kp N6        &kp DA_Y  &kp DA_U  &kp DA_I   &kp DA_O      &kp DA_P        &mt DA_APOSTROPHE DA_A_RING
-&kp DA_LESS_THAN     &kp DA_A      &kp DA_S   &kp DA_D  &kp DA_F  &kp DA_G  &soft_off                            &soft_off     &kp DA_H  &kp DA_J  &kp DA_K   &kp DA_L      &kp DA_AE       &mt DA_ACUTE DA_A_RING
+&kp DA_LESS_THAN     &kp DA_A      &kp DA_S   &kp DA_D  &kp DA_F  &kp DA_G  &soft_off                            &soft_off     &kp DA_H  &kp DA_J  &kp DA_K   &kp DA_L      &kp DA_AE       &mt DA_ACUTE DA_O_SLASH
 &kp LSHFT            &kp DA_Z      &kp DA_X   &kp DA_C  &kp DA_V  &kp DA_B  &kp PG_UP     &kp PG_DN    &kp HOME  &kp END       &kp DA_N  &kp DA_M  &kp COMMA  &kp DOT       &kp DA_MINUS    &mt RSHFT RET
 &kp LCTRL            &kp LEFT_GUI  &kp LALT   &mo 3     &mo 3               &kp DA_SPACE  &mo 1        &kp DEL   &kp DA_SPACE            &mo 2     &kp LEFT   &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT
             >;
