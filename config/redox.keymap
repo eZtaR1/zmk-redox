@@ -64,7 +64,7 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | DA_SPACE   | --- | DEL  | DA_SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
-&trans   &trans             &trans       &trans       &trans             &trans                                          &trans        &trans            &trans        &trans       &trans        &sys_reset
+&trans   &trans             &kp DA_AT    &trans       &trans             &trans                                          &trans        &trans            &trans        &trans       &trans        &sys_reset
 &kp ESC  &kp EXCL           &kp DA_AT    &kp DA_HASH  &kp DA_POUND_SIGN  &kp DA_EURO   &trans                    &trans  &kp DA_CARET  &kp DA_AMPERSAND  &kp DA_ASTRK  &kp DA_LPAR  &kp DA_RPAR   &kp DEL
 &trans   &kp DA_UNDERSCORE  &kp DA_PLUS  &kp DA_LBRC  &kp DA_RBRC        &kp DA_PIPE   &trans                    &trans  &kp HOME      &kp PG_UP         &kp PSCRN     &kp UP       &kp DA_ACUTE  &kp TILDE
 &trans   &trans             &trans       &kp DA_LPAR  &kp DA_RPAR        &kp DA_TILDE  &trans  &trans    &trans  &trans  &kp END       &kp PG_DN         &kp LEFT      &kp DOWN     &kp RIGHT     &kp RET
