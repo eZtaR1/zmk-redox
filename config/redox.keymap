@@ -30,7 +30,7 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | DA_SPACE   | --- | DEL  | DA_SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-&kp ESC                       &kp DA_N1     &kp DA_N2  &kp N3      &kp N4    &kp N5                                                          &kp N7    &kp N8    &kp N9     &kp N0        &kp DA_PLUS     &kp BSPC
+&kp A                         &kp DA_N1     &kp DA_N2  &kp N3      &kp N4    &kp N5                                                          &kp N7    &kp N8    &kp N9     &kp N0        &kp DA_PLUS     &kp BSPC
 &kp TAB                       &kp DA_Q      &kp DA_W   &kp DA_E    &kp DA_R  &kp DA_T  &kp K_CUT                            &kp N6           &kp DA_Y  &kp DA_U  &kp DA_I   &kp DA_O      &kp DA_P        &mt DA_ACUTE DA_A_RING
 &mt DA_LESS_THAN DA_ONE_HALF  &kp DA_A      &kp DA_S   &kp DA_D    &kp DA_F  &kp DA_G  &kp K_COPY                           &kp K_PASTE      &kp DA_H  &kp DA_J  &kp DA_K   &kp DA_L      &kp DA_AE       &mt DA_APOSTROPHE DA_O_SLASH
 &kp LSHFT                     &kp DA_Z      &kp DA_X   &kp DA_C    &kp DA_V  &kp DA_B  &kp PG_UP     &kp PG_DN    &kp HOME  &kp PRINTSCREEN  &kp DA_N  &kp DA_M  &kp COMMA  &kp DOT       &kp DA_MINUS    &kp RSHFT
