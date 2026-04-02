@@ -1,0 +1,38 @@
+# zmk-redox
+
+ZMK firmware for a wireless Redox split keyboard with a USB dongle central.
+
+## Hardware
+
+| Role | Board | Notes |
+|---|---|---|
+| Dongle (central) | PandaKB nRF52840 (`nice_nano_v2`) | 1.3" SH1106 OLED, SDA P0.17 / SCL P0.20 |
+| Left half | nice!nano v2 | peripheral |
+| Right half | nice!nano v2 | peripheral |
+
+Layout: Danish (`keys_da.h`), 4 layers.
+
+## Build artifacts
+
+Trigger **Actions → Build → Run workflow** to produce:
+
+- `redox_dongle` — flash to PandaKB dongle
+- `redox_left` — flash to left half
+- `redox_right` — flash to right half
+- `settings_reset` — wipe BLE pairings (flash to each controller when needed)
+
+## Flashing order
+
+> Always flash `settings_reset` to all three controllers before first use or when re-pairing.
+
+1. Flash `settings_reset` to **dongle**, left, and right (in any order). Wait for each to reboot.
+2. Flash `redox_left` to left half.
+3. Flash `redox_right` to right half.
+4. Flash `redox_dongle` to dongle **last**, with the left half plugged in nearby (powered on).
+
+To enter flash mode: double-press the reset button. The controller appears as a USB drive.
+
+## Notes
+
+- `build.yml` uses `zmkfirmware/zmk@v0.3`. GitHub removes Node.js 20 from runners **Sept 16 2026** (forced from June 2 2026). Check for a new ZMK release and bump the tag before then — see comment in `.github/workflows/build.yml`.
+- OLED pin mapping is unconfirmed physically. If the display is blank after pairing, check SDA/SCL connections first.
