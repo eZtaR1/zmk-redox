@@ -1,0 +1,12 @@
+if SHIELD_REDOX_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Redox"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_REDOX_DONGLE
