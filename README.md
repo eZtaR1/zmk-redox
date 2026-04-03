@@ -10,7 +10,7 @@ The dongle in question is a prebuilt PandaKB ZMK Dongle, which utilizes a nRF528
 
 | Role | Board | Notes |
 |---|---|---|
-| Dongle (central) | PandaKB nRF52840 (`nice_nano_v2`) | 1.3" SH1106 OLED, SDA P0.17 / SCL P0.20 |
+| Dongle (central) | PandaKB nRF52840 (built as `nice_nano_v2`) | 1.3" SH1106 OLED, SDA P0.17 / SCL P0.20 ✓ |
 | Left half | nice!nano v2 | peripheral |
 | Right half | nice!nano v2 | peripheral |
 
@@ -39,4 +39,5 @@ To enter flash mode: double-press the reset button. The controller appears as a 
 ## Notes
 
 - `build.yml` uses `zmkfirmware/zmk@v0.3`. GitHub removes Node.js 20 from runners **Sept 16 2026** (forced from June 2 2026). Check for a new ZMK release and bump the tag before then — see comment in `.github/workflows/build.yml`.
-- OLED pin mapping is unconfirmed physically. If the display is blank after pairing, check SDA/SCL connections first.
+- Display uses [englmaxi/zmk-dongle-display](https://github.com/englmaxi/zmk-dongle-display) (`dongle_display` shield) for the status screen (bongo cat, layer, peripheral battery, modifiers).
+- OLED pin mapping confirmed: SDA P0.17, SCL P0.20 via `pro_micro_i2c`.
