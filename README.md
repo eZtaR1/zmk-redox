@@ -1,6 +1,10 @@
 # zmk-redox
 
-ZMK firmware for a wireless Redox split keyboard with a USB dongle central.
+This is my attempt to add a dongle to my ZMK redox.
+
+The keyboard is based on an earlier version of the falbatech PCBs (with the contoller centered) where i substituted the pro micro for nice nanos with a battery.
+
+The dongle in question is a prebuilt PandaKB ZMK Dongle, which utilizes a nRF52840 and a 1.3" SH1106 OLED, SDA P0.17 / SCL P0.20
 
 ## Hardware
 
